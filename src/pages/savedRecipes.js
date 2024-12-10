@@ -36,13 +36,13 @@ const SavedRecipes = () => {
             {savedRecipes.map((recipe) => (
               <div
                 key={recipe.id}
-                className="relative border max-w-lg mx-auto border-gray-200 rounded-lg shadow-lg overflow-hidden text-center"
+                className="relative border max-w-lg w-full mx-auto border-gray-200 rounded-lg shadow-lg overflow-hidden text-center"
               >
-                <img
-                  src={recipe.image}
-                  alt={recipe.title}
-                  className="w-full h-48 object-cover"
-                />
+                  <img
+                    src={recipe.image}
+                    alt={recipe.title}
+                    className="w-full cursor-pointer h-48 object-cover transform transition duration-300 group-hover:opacity-50"
+                  />
                 <h2 className="text-lg font-bold my-3 text-[#222831]">
                   {recipe.title}
                 </h2>

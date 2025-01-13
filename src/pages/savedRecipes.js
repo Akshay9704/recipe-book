@@ -1,4 +1,3 @@
-// src/pages/SavedRecipes.js
 import { useState, useEffect } from "react";
 import { IoMdCloseCircle } from "react-icons/io";
 import { Link } from "react-router-dom";
